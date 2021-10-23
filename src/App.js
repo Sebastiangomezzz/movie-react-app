@@ -14,7 +14,6 @@ function App() {
     <div className="App">
       <Header />
       <Home />
-      I WILL START HERE
       <GlobalStyle />
       
     </div>
