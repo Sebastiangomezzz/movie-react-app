@@ -13,6 +13,7 @@ export const useHomeFetch = ()=>{
     const [state, setState]= useState(initialState);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const fetchMovies = async (page, searchTerm = '')=>{
         try {
@@ -37,10 +38,11 @@ export const useHomeFetch = ()=>{
         
     };
 
-    //render inicial
+    //render inicial y para la búsqueda
     useEffect(() => {
-        fetchMovies(1)//el "1" es porque solo queremos la primera pagina
-    }, [])//indicamos la dependencias cuando se disparará el useEffect, en éste caso en el primer render y solo una vez.
+        setState(initialState);
+        fetchMovies(1, searchTerm);//el "1" es porque solo queremos la primera pagina
+    }, [searchTerm])//indicamos que, cuando cambie el estado de searchterm, se disparará el useEffect.
 
-    return { state, loading, error}
+    return { state, loading, error, setSearchTerm, searchTerm };
 }
