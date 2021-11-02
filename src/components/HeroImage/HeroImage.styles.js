@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
         100%
     ),
     url(${props => props.image}), var(--darkGrey);
-    background-size: 100% cover;
+    background-size: 100%; /* cover */
     background-position: center;
     height: 600px;
     position: relative;

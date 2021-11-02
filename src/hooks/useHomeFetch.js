@@ -14,6 +14,7 @@ export const useHomeFetch = ()=>{
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
+    const [isLoadingMore, setIsLoadingMore] = useState(false);
 
     const fetchMovies = async (page, searchTerm = '')=>{
         try {
@@ -44,5 +45,13 @@ export const useHomeFetch = ()=>{
         fetchMovies(1, searchTerm);//el "1" es porque solo queremos la primera pagina
     }, [searchTerm])//indicamos que, cuando cambie el estado de searchterm, se disparará el useEffect.
 
-    return { state, loading, error, setSearchTerm, searchTerm };
+    //Load More Movies
+    useEffect(() => {
+      if(!isLoadingMore) return {/*si no está cargando más retorna*/}
+      
+      fetchMovies(state.page + 1, searchTerm);
+      setIsLoadingMore(false);
+      
+    }, [isLoadingMore, state.page, searchTerm])
+    return { state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore };
 }

@@ -16,6 +16,7 @@ export const Content = styled.div`
     background: var(--medGrey);
     border-radius: 40px;
     color: var(--white);
+    margin: 0 auto;
 
     img{
         position: absolute;
@@ -25,7 +26,7 @@ export const Content = styled.div`
     };
 
     input{
-        font-size: 20px;
+        font-size: var(--fontBig);
         position: absolute;
         left: 0;
         margin: 8px 0;
