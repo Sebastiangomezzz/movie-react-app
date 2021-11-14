@@ -34,8 +34,7 @@ const Movie = () => {
       <Grid header="Actors">
         {/* el header es una prop que sirve para el título del grid en cuestión */}
         {
-          (movie.actors,
-          map((actor) => (
+          (movie.actors.map((actor) => (
             <Actor
               key={actor.credit_id}
               name={actor.name}
