@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Image = styled.img`
   width: 100%;
@@ -8,7 +8,7 @@ export const Image = styled.img`
   border-radius: 20px;
   animation: animateThumb 0.5s;
 
-  :hover{
+  :hover {
     opacity: 0.8;
   }
 

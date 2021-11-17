@@ -1,19 +1,23 @@
-
-
-//styles
+import React from 'react';
+import PropTypes from 'prop-types';
+// Styles
 import { Wrapper, Content, Text } from './HeroImage.styles';
 
-const HeroImage = (props) =>( //en lugar de poner "props" aquí, podríamos desestructurar y poner solamente ({image, title, text}) y nos ahorraríamos escribir "props" cada vez más abajo.
-                                                                
-    <Wrapper image={props.image}>
-        <Content>
-            <Text>
-                <h1>{props.title}</h1>
-                <p>{props.text}</p>
-            </Text>
-        </Content>
-    </Wrapper>
+const HeroImage = ({ image, title, text }) => (
+  <Wrapper image={image}>
+    <Content>
+      <Text>
+        <h1>{title}</h1>
+        <p>{text}</p>
+      </Text>
+    </Content>
+  </Wrapper>
 );
 
-export default HeroImage;
+HeroImage.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string
+};
 
+export default HeroImage;
