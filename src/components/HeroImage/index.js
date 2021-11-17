@@ -1,4 +1,4 @@
-import react from 'react';
+
 
 //styles
 import { Wrapper, Content, Text } from './HeroImage.styles';
