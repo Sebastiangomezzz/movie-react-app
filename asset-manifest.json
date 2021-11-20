@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/Sebastiangomezzz/movie-react-app/static/js/main.ba4de7a1.chunk.js",
+    "main.js.map": "/Sebastiangomezzz/movie-react-app/static/js/main.ba4de7a1.chunk.js.map",
+    "runtime-main.js": "/Sebastiangomezzz/movie-react-app/static/js/runtime-main.7161924b.js",
+    "runtime-main.js.map": "/Sebastiangomezzz/movie-react-app/static/js/runtime-main.7161924b.js.map",
+    "static/js/2.cd092e65.chunk.js": "/Sebastiangomezzz/movie-react-app/static/js/2.cd092e65.chunk.js",
+    "static/js/2.cd092e65.chunk.js.map": "/Sebastiangomezzz/movie-react-app/static/js/2.cd092e65.chunk.js.map",
+    "index.html": "/Sebastiangomezzz/movie-react-app/index.html",
+    "static/js/2.cd092e65.chunk.js.LICENSE.txt": "/Sebastiangomezzz/movie-react-app/static/js/2.cd092e65.chunk.js.LICENSE.txt",
+    "static/media/no_image.22d2aa4d.jpg": "/Sebastiangomezzz/movie-react-app/static/media/no_image.22d2aa4d.jpg",
+    "static/media/react-movie-logo.42955eb6.svg": "/Sebastiangomezzz/movie-react-app/static/media/react-movie-logo.42955eb6.svg",
+    "static/media/search-icon.cd820f5a.svg": "/Sebastiangomezzz/movie-react-app/static/media/search-icon.cd820f5a.svg",
+    "static/media/tmdb_logo.f15b6632.svg": "/Sebastiangomezzz/movie-react-app/static/media/tmdb_logo.f15b6632.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7161924b.js",
+    "static/js/2.cd092e65.chunk.js",
+    "static/js/main.ba4de7a1.chunk.js"
+  ]
+}
